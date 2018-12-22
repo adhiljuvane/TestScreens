@@ -5,7 +5,7 @@ const InputGroup = Input.Group;
 const Option = Select.Option;
 const { TextArea } = Input;
 
-export default class SellerSignUp extends React.Component{
+export default class AddProduct extends React.Component{
   constructor(props){
     super(props)
     this.state={
@@ -47,7 +47,7 @@ export default class SellerSignUp extends React.Component{
     return(
       <div className="sellerSignUp" style={{ width : "100%" , height : "100vh"}}>
         <div style={{display : "flex" ,  backgroundColor : "#e3e3e3" , flexDirection : "column" , alignItems : "center" , justifyContent : "center" , margin : "auto" , padding : "10px"}}>
-          <h2>Seller Sign UP</h2>
+          <h2>Add Product</h2>
           <Input placeholder="Product Name" style={{ width : "25%"}}/>
           <div style={{width : "25%" , display : "flex" , flexDirection : "row" , margin : "10px"}}>
           <div style={{width : "65%"}}>Product Category</div>

@@ -7,12 +7,12 @@ import Screen2 from './components/screen2' ;
 import Screen3 from './components/screen3' ;
 import Screen4 from './components/screen4' ;
 import Screen6 from './components/screen6' ;
-import SellerSignUp from './components/SellerSignUp';
+import AddProduct from './components/AddProduct';
 import Loading from './components/common/loading' ;
 import ButtonDark from './components/common/button' ;
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<SellerSignUp/>, document.getElementById('root'));
+ReactDOM.render(<AddProduct/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
