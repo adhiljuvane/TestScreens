@@ -7,9 +7,9 @@ function callData(){
     a.id = "watsapp-button";
     a.href="https://wa.me/919048559096?text=Hellloooo";
 {%- if request.page_type == 'product' -%}    
-  document.getElementById('watsapp-button').href="href='https://wa.me/919048559096?text=Info%20Variant%20{{product.selected_or_first_available_variant.id}}";
+  a.href="href='https://wa.me/919048559096?text=Info%20Variant%20{{product.selected_or_first_available_variant.id}}";
 {%- else -%}    
-  document.getElementById('watsapp-button').href="https://wa.me/919048559096?text=General";
+  a.href="https://wa.me/919048559096?text=General";
  {%- endif -%}
   setInterval(function()
 	{
