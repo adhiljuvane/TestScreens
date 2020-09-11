@@ -1,7 +1,7 @@
 function callData(){
   var urlParams = new URLSearchParams(window.location.search);
   const shop = urlParams.get('shop');
-  var phone = "Cannot Get Phone Number";
+  var phone = "Error";
   var xhr = new XMLHttpRequest();
   xhr.onload = function () {
    if (xhr.status >= 200 && xhr.status < 300) {
@@ -17,7 +17,7 @@ function callData(){
       a.href=`https://wa.me/91${phone}?text=${currentPage}%20I%20would%20like%20to%20know%20more%20about%20this`
    }
  };
- xhr.open('GET', 'https://13916c2d620b.ngrok.io/getWatsappNumber/zoko-dev.myshopify.com');
+ xhr.open('GET', `https://13916c2d620b.ngrok.io/getWatsappNumber/${shop}`);
  xhr.send();
  let link = document.createElement("link");
  link.rel = "stylesheet";
